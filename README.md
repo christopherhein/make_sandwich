@@ -40,3 +40,9 @@ Runnitttt!
 make_sandwich
 ```
 
+
+### Coming soon...
+
+* Connecting to Karotz
+* Make a gem for easier installation
+* nom nom on sandwiches.
