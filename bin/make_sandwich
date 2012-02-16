@@ -1,7 +1,6 @@
 #!/usr/bin/env ruby
 
 require "gmail"
-require "ruby-gmail"
 require "typhoeus"
 
 # check for the config file
