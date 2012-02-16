@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
   s.email       = ["chris@generalthings.com"]
   s.homepage    = "https://github.com/generalthings/make_sandwich"
   s.summary     = %q{Delicious, juicy, tender sandwiches on the command line.}
-  s.description = %q{Have an employee that loves making sandwiches... we do, but we're all too lazy to take our headphones off to ask him wipe one up. In an effort to solve this I wrote make_sandwich.}
+  s.description = %q{Have an employee that loves making sandwiches... we do, but we're all too lazy to take our headphones off to ask him whip one up. In an effort to solve this I wrote make_sandwich.}
 
   s.rubyforge_project = "make-sandwich"
 
