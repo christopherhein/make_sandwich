@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = "make-sandwich"
-  s.version     = "0.0.1"
+  s.version     = "0.0.2"
   s.authors     = ["Christopher Hein"]
   s.email       = ["chris@generalthings.com"]
   s.homepage    = "https://github.com/generalthings/make_sandwich"
@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   # specify any dependencies here; for example:
-  s.add_development_dependency "gmail"
-  s.add_development_dependency "ruby-gmail"
-  s.add_development_dependency "typhoeus"
+  s.add_runtime_dependency "gmail"
+  s.add_runtime_dependency "ruby-gmail"
+  s.add_runtime_dependency "typhoeus"
 end
