@@ -4,19 +4,11 @@ Sometimes you just need a sandwich on the command line.
 
 ## Installation
 
-### Step One
-
-Copy the `make_sandwich` script and add it to your path. 
-
-### Step Two 
-
-Install all the necessary gems into your global gemset.
-
 ```bash
-$ gem i gmail typhoeus ruby-gmail
+$ gem i make_sandwich
 ```
 
-### Step Three
+## Configuration
 
 Create your ~/.sandwich file
 
@@ -32,7 +24,8 @@ youremail@generalthings.com
 password
 ```
 
-### Step Four
+
+### Making Tender juicy sandwiches on the commandline.
 
 Runnitttt!
 
@@ -40,9 +33,26 @@ Runnitttt!
 make_sandwich
 ```
 
+# YUMMM!!!!!!!!!
+
 
 ### Coming soon...
 
 * Connecting to Karotz
-* Make a gem for easier installation
 * nom nom on sandwiches.
+
+
+## Note on Patches/Pull Requests
+
+* Fork the project.
+* Make your feature addition or bug fix.
+* Add tests for it. This is important so I don't break it in a
+  future version unintentionally.
+* Commit, do not mess with rakefile, version, or history.
+  (if you want to have your own version, that is fine but
+   bump version in a commit by itself I can ignore when I pull)
+* Send me a pull request. Bonus points for topic branches.
+
+## Copyright
+
+Copyright (c) 2012 General Things Inc. See LICENSE for details.

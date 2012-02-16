@@ -1,16 +1,10 @@
 #!/usr/bin/env ruby
 
-# http://www.iheartquotes.com/api/v1/random
+require "gmail"
+require "ruby-gmail"
+require "typhoeus"
 
-['gmail', 'typhoeus'].each do |gem|
-  begin
-    require gem
-  rescue LoadError
-    puts "You need to install #{gem}: gem install #{gem} ruby-gmail"
-    exit!(1)
-  end
-end
-
+# check for the config file
 config_file = "#{ENV['HOME']}/.sandwich"
 unless File.exist?(config_file)
   puts "You need to type the sandwich makers email, your email and password (one per line) into `~/.sandwich`"
@@ -21,15 +15,22 @@ unless File.exist?(config_file)
   exit!(1)
 end
 
+# Establish all the params
 sandwich_maker,email,password = File.read(config_file).split("\n")
 
+# Inspirational quotes are very important
+#
+# you need to soothe the your sandwich maker first.
+#
+# http://www.iheartquotes.com/api/v1/random
 quote = Typhoeus::Request.get("http://www.iheartquotes.com/api/v1/random")
-
 msg = quote.body.split("\n")
 msg.pop
 
+# Building the Gmail connection
 gmail = Gmail.new(email, password)
 
+# Creating and sending the email
 gmail.deliver do
   to "#{sandwich_maker}"
   subject "Favor pleaseeee! :)"
@@ -41,4 +42,5 @@ gmail.deliver do
   end
 end
 
+# Close the connection.
 gmail.logout
