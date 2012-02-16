@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = "make-sandwich"
-  s.version     = "0.0.2"
+  s.version     = "0.0.3"
   s.authors     = ["Christopher Hein"]
   s.email       = ["chris@generalthings.com"]
   s.homepage    = "https://github.com/generalthings/make_sandwich"
