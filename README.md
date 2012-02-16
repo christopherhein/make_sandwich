@@ -5,7 +5,7 @@ Sometimes you just need a sandwich on the command line.
 ## Installation
 
 ```bash
-$ gem i make_sandwich
+$ gem i make-sandwich
 ```
 
 ## Configuration
